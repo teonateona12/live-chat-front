@@ -58,12 +58,13 @@ function Chat({ username, room, socket }) {
           type="text"
           placeholder="Hey..."
           value={currentMessage}
-          onkeyDown={(e) => {
+          onKeyDown={(e) => {
             if (e.key === "Enter") {
               sendMessage();
             }
           }}
         />
+
         <button onClick={sendMessage}>&#9658;</button>
       </div>
     </div>
