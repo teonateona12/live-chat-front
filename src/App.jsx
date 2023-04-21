@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import io from "socket.io-client";
 import Chat from "./Chat";
-const socket = io.connect("https://live-chat-api-production.up.railway.app/");
+const socket = io.connect("https://live-chat-api-production.up.railway.app");
 function App() {
   const [username, setUsername] = useState("");
   const [room, setRoom] = useState("");
